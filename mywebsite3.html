@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Event Photography</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+    <style>
+        body, html {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+        }
+
+        .cta-button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            list-style: none;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea, form button {
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ff6600;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #e05500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Mastering Event Photography</h1>
+            <p>Turn your passion into a profession with our comprehensive course.</p>
+            <a href="#modules" class="cta-button">Explore Modules</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#objectives">Objectives</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <div class="content">
+                <h2>Course Overview</h2>
+                <p>This course is designed to teach you the art and business of event photography. From understanding your equipment to delivering the final edited photos, you will learn the skills needed to succeed as an event photographer.</p>
+            </div>
+        </section>
+
+        <section id="objectives">
+            <div class="content">
+                <h2>Course Objectives</h2>
+                <ul>
+                    <li>Understand the basics of event photography and necessary equipment.</li>
+                    <li>Learn how to prepare for various types of events.</li>
+                    <li>Master the techniques for capturing high-quality images in different lighting conditions.</li>
+                    <li>Develop skills in post-processing and editing photos.</li>
+                    <li>Gain insights into marketing and managing an event photography business.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="modules">
+            <div class="content">
+                <h2>Course Modules</h2>
+                <div class="module">
+                    <h3>Module 1: Introduction to Event Photography</h3>
+                    <ul>
+                        <li><strong>Lesson 1.1: What is Event Photography?</strong></li>
+                        <li><strong>Lesson 1.2: Essential Gear for Event Photography</strong></li>
+                    </ul>
+                    <p><strong>Assignment 1:</strong> Create a checklist of essential gear for an upcoming event you plan to photograph.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <div class="content">
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li><strong>Video Tutorials:</strong> Access to step-by-step video tutorials for each module.</li>
+                    <li><strong>Downloadable Guides:</strong> Printable checklists, templates, and guides.</li>
+                    <li><strong>Community Forum:</strong> Join our community of event photographers for support and networking.</li>
+                    <li><strong>Live Q&A Sessions:</strong> Monthly live sessions with the instructor to answer your questions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mastering Event Photography. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you for reaching out! We will get back to you soon.');
+        });
+    </script>
+
+    <script>
+        // Backend Simulation using Node.js and Express (commented for your understanding)
+        /*
+        const express = require('express');
+        const app = express();
+        const port = 3000;
+
+        app.use(express.static('public'));
+        app.use(express.json());
+        app.use(express.urlencoded({ extended: true }));
+
+        app.get('/', (req, res) => {
+            res.sendFile(__dirname + '/index.html');
+        });
+
+        app.post('/contact', (req, res) => {
+            const { name, email, message } = req.body;
+            console.log(`Received a message from ${name} (${email}): ${message}`);
+            res.send('Message received. Thank you!');
+        });
+
+        app.listen(port, () => {
+            console.log(`Server running at http://localhost:${port}`);
+        });
+        */
+    </script>
+</body>
+</html>
